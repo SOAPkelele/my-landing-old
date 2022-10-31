@@ -10,23 +10,26 @@ module.exports = {
           'perk-gradient-light': 'rgba(4, 6, 14, 0.9)',
           'perk-gradient-dark': '#04060E',
         },
-        gold: {
-          dark: '#FA6641',
-          light: '#EAE100',
+      },
+      container: {
+        center: true,
+        padding: '2rem',
+      },
+      animation: {
+        shimmering: 'shimmer 5s ease infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%, 100%': {
+            'background-size': '300% 300%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '300% 300%',
+            'background-position': 'right center',
+          },
         },
       },
-      borderRadius: {
-        avatar: '6rem',
-      },
-      width: {
-        chart: '108px',
-        time: '95px',
-        glass: '107px',
-      },
-    },
-    container: {
-      center: true,
-      padding: '2rem',
     },
   },
 }
