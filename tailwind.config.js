@@ -17,6 +17,7 @@ module.exports = {
       },
       animation: {
         shimmering: 'shimmer 5s ease infinite',
+        blob: 'blob 4s infinite',
       },
       keyframes: {
         shimmer: {
@@ -27,6 +28,20 @@ module.exports = {
           '50%': {
             'background-size': '300% 300%',
             'background-position': 'right center',
+          },
+        },
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(30px, -50px) scale(1.2)',
+          },
+          '66%': {
+            transform: 'translate(-20px, 20px) scale(0.8)',
+          },
+          '100%': {
+            transform: 'tranlate(0px, 0px) scale(1)',
           },
         },
       },
