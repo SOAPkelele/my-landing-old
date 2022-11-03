@@ -11,6 +11,18 @@ module.exports = {
           'perk-gradient-dark': '#04060E',
         },
       },
+      inset: {
+        '-0.5': '-0.125rem',
+        '-3': '-0.75rem',
+        '-2': '-0.5rem',
+      },
+      scale: {
+        102: '1.02',
+      },
+      borderWidth: {
+        0.5: '0.5px',
+        1: '1px',
+      },
       container: {
         center: true,
         padding: '2rem',

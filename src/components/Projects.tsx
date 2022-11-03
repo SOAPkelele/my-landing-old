@@ -49,8 +49,8 @@ const backgroundNeon = classnames(
   opacity('opacity-75', 'group-hover:opacity-100'),
   transitionDuration('duration-1000', 'group-hover:duration-1000'),
   filters('group-hover:blur'),
-  'group-hover:-inset-x-3',
-  'group-hover:-inset-y-2'
+  inset('group-hover:-inset-x-3'),
+  inset('group-hover:-inset-y-2')
 )
 
 export default function () {

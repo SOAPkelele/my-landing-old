@@ -28,7 +28,8 @@ const iconContainer = classnames(
   opacity('opacity-60', 'hover:opacity-100'),
   width('w-10'),
   height('h-10'),
-  textColor('hover:text-yellow-100')
+  fill('fill-current'),
+  textColor('text-white', 'hover:text-yellow-100')
 )
 
 const iconButtonsList = [

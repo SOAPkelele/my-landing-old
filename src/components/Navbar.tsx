@@ -7,11 +7,14 @@ import classnames, {
   blur,
   borderColor,
   borderRadius,
+  borderWidth,
   display,
   flexDirection,
   gap,
   gradientColorStops,
+  group,
   height,
+  inset,
   justifyContent,
   margin,
   maxWidth,
@@ -25,7 +28,6 @@ import classnames, {
 } from 'classnames/tailwind'
 
 const headerContainer = classnames(
-  // inset('left-0'),
   margin('mx-auto'),
   display('flex'),
   width('w-full'),
@@ -55,12 +57,11 @@ const navListContainer = classnames(
   gap('gap-3')
 )
 
-const resumeButtonWrapper = classnames('group', position('relative')) // how
+const resumeButtonWrapper = classnames(group('group'), position('relative')) // how
 
 const blurBaground = classnames(
   position('absolute'),
-  '-inset-0.5',
-  //   inset('-inset-0.5'),
+  inset('-inset-0.5'),
   gradientColorStops('from-pink-600', 'via-red-500', 'to-orange-500'),
   borderRadius('rounded-lg'),
   blur('blur'),
@@ -70,15 +71,13 @@ const blurBaground = classnames(
 )
 
 const resumeButton = classnames(
-  //  border-[1px]
   position('relative'),
   borderRadius('rounded-lg'),
   padding('px-2', 'py-1'),
   backgroundColor('bg-black-background'),
   borderColor('border-gray-400'),
   transitionsAndAnimations('duration-200', 'transition'),
-  'border-[1px]'
-  //   borderWidth('border-[1px]') // Todo
+  borderWidth('border-1')
 )
 
 const linksList = [

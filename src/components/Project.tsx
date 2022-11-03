@@ -11,6 +11,7 @@ import classnames, {
   backgroundColor,
   borderColor,
   borderRadius,
+  borderWidth,
   display,
   fill,
   flexDirection,
@@ -21,6 +22,8 @@ import classnames, {
   opacity,
   padding,
   position,
+  scale,
+  textColor,
   transitionsAndAnimations,
   width,
 } from 'classnames/tailwind'
@@ -37,8 +40,8 @@ const projectContainer = classnames(
   alignItems('items-start'),
   gap('gap-3'),
   transitionsAndAnimations('ease-in-out', 'duration-1000', 'transition'),
-  'group-hover:scale-[1.02]',
-  'border-[1px]'
+  scale('group-hover:scale-102'),
+  borderWidth('border-1')
 )
 
 const technologiesContainer = classnames(
@@ -55,7 +58,7 @@ function TechnologiesSeparator() {
         borderColor('border-b-gray-400'),
         alignSelf('self-center'),
         width('w-full'),
-        'border-b-[0.5px]'
+        borderWidth('border-b-0.5')
       )}
     ></div>
   )
@@ -70,10 +73,11 @@ const titleContainer = classnames(
 
 const githubIconContainer = classnames(
   fill('fill-white'),
-  opacity('opacity-60', 'hover:opacity-100', 'group-hover:opacity-80'),
+  opacity('opacity-60', 'hover:!opacity-100', 'group-hover:opacity-80'),
   width('w-10'),
   height('h-10'),
-  'hover:fill-yellow-100'
+  fill('fill-current'),
+  textColor('text-white', 'hover:!text-yellow-100')
 )
 
 function GithubIcon({ link }: { link: string }) {

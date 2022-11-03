@@ -279,8 +279,6 @@ export type TBackgroundColor =
   | 'bg-rose-700'
   | 'bg-rose-800'
   | 'bg-rose-900'
-  | 'bg-gold-dark'
-  | 'bg-gold-light'
 
 export type TBackgroundPosition =
   | 'bg-bottom'
@@ -991,12 +989,6 @@ export type TGradientColorStops =
   | 'from-rose-900'
   | 'via-rose-900'
   | 'to-rose-900'
-  | 'from-gold-dark'
-  | 'via-gold-dark'
-  | 'to-gold-dark'
-  | 'from-gold-light'
-  | 'via-gold-light'
-  | 'to-gold-light'
 
 export type TBackgrounds =
   | TBackgroundAttachment
@@ -2622,20 +2614,6 @@ export type TBorderColor =
   | 'border-l-rose-900'
   | 'border-x-rose-900'
   | 'border-y-rose-900'
-  | 'border-gold-dark'
-  | 'border-t-gold-dark'
-  | 'border-r-gold-dark'
-  | 'border-b-gold-dark'
-  | 'border-l-gold-dark'
-  | 'border-x-gold-dark'
-  | 'border-y-gold-dark'
-  | 'border-gold-light'
-  | 'border-t-gold-light'
-  | 'border-r-gold-light'
-  | 'border-b-gold-light'
-  | 'border-l-gold-light'
-  | 'border-x-gold-light'
-  | 'border-y-gold-light'
 
 export type TBorderOpacity =
   | 'border-opacity-0'
@@ -2736,15 +2714,6 @@ export type TBorderRadius =
   | 'rounded-br-full'
   | 'rounded-bl-full'
   | 'rounded-full'
-  | 'rounded-t-avatar'
-  | 'rounded-r-avatar'
-  | 'rounded-b-avatar'
-  | 'rounded-l-avatar'
-  | 'rounded-tr-avatar'
-  | 'rounded-tl-avatar'
-  | 'rounded-br-avatar'
-  | 'rounded-bl-avatar'
-  | 'rounded-avatar'
 
 export type TBorderWidth =
   | 'border-t-0'
@@ -2754,6 +2723,13 @@ export type TBorderWidth =
   | 'border-x-0'
   | 'border-y-0'
   | 'border-0'
+  | 'border-t-1'
+  | 'border-r-1'
+  | 'border-b-1'
+  | 'border-l-1'
+  | 'border-x-1'
+  | 'border-y-1'
+  | 'border-1'
   | 'border-t-2'
   | 'border-r-2'
   | 'border-b-2'
@@ -2782,6 +2758,13 @@ export type TBorderWidth =
   | 'border-x'
   | 'border-y'
   | 'border'
+  | 'border-t-0.5'
+  | 'border-r-0.5'
+  | 'border-b-0.5'
+  | 'border-l-0.5'
+  | 'border-x-0.5'
+  | 'border-y-0.5'
+  | 'border-0.5'
 
 export type TDivideColor =
   | 'divide-inherit'
@@ -3030,6 +3013,8 @@ export type TDivideOpacity =
 export type TDivideWidth =
   | 'divide-x-0'
   | 'divide-y-0'
+  | 'divide-x-1'
+  | 'divide-y-1'
   | 'divide-x-2'
   | 'divide-y-2'
   | 'divide-x-4'
@@ -3038,6 +3023,8 @@ export type TDivideWidth =
   | 'divide-y-8'
   | 'divide-x'
   | 'divide-y'
+  | 'divide-x-0.5'
+  | 'divide-y-0.5'
   | 'divide-x-reverse'
   | 'divide-y-reverse'
 
@@ -3270,8 +3257,6 @@ export type TRingColor =
   | 'ring-rose-700'
   | 'ring-rose-800'
   | 'ring-rose-900'
-  | 'ring-gold-dark'
-  | 'ring-gold-light'
 
 export type TRingWidth =
   | 'ring-0'
@@ -3529,8 +3514,6 @@ export type TRingOffsetColor =
   | 'ring-offset-rose-700'
   | 'ring-offset-rose-800'
   | 'ring-offset-rose-900'
-  | 'ring-offset-gold-dark'
-  | 'ring-offset-gold-light'
 
 export type TRingOffsetWidth =
   | 'ring-offset-0'
@@ -3782,8 +3765,6 @@ export type TOutlineColor =
   | 'outline-rose-700'
   | 'outline-rose-800'
   | 'outline-rose-900'
-  | 'outline-gold-dark'
-  | 'outline-gold-light'
 
 export type TBorders =
   | TBorderStyle
@@ -4086,8 +4067,6 @@ export type TBoxShadowColor =
   | 'shadow-rose-700'
   | 'shadow-rose-800'
   | 'shadow-rose-900'
-  | 'shadow-gold-dark'
-  | 'shadow-gold-light'
 
 export type TOpacity =
   | 'opacity-0'
@@ -4155,6 +4134,8 @@ export type TAnimation =
   | 'animate-ping'
   | 'animate-pulse'
   | 'animate-bounce'
+  | 'animate-shimmering'
+  | 'animate-blob'
 
 export type TTransitionsAndAnimations =
   | TTransitionProperty
@@ -4744,6 +4725,12 @@ export type TGrid =
   | TGridRowStart
   | TGridRowEnd
   | TGap
+
+export type TGroup = 'group'
+
+export type TPeer = 'peer'
+
+export type TGrouping = TGroup | TPeer
 
 export type TPadding =
   | 'p-0'
@@ -5629,8 +5616,6 @@ export type TCaretColor =
   | 'caret-rose-700'
   | 'caret-rose-800'
   | 'caret-rose-900'
-  | 'caret-gold-dark'
-  | 'caret-gold-light'
 
 export type TWillChange =
   | 'will-change-auto'
@@ -5868,8 +5853,6 @@ export type TAccentColor =
   | 'accent-rose-800'
   | 'accent-rose-900'
   | 'accent-auto'
-  | 'accent-gold-dark'
-  | 'accent-gold-light'
 
 export type TScrollPadding =
   | 'scroll-p-0'
@@ -6788,6 +6771,27 @@ export type TInset =
   | 'right-full'
   | 'bottom-full'
   | 'left-full'
+  | '-inset-0.5'
+  | '-inset-x-0.5'
+  | '-inset-y-0.5'
+  | '-top-0.5'
+  | '-right-0.5'
+  | '-bottom-0.5'
+  | '-left-0.5'
+  | '-inset-3'
+  | '-inset-x-3'
+  | '-inset-y-3'
+  | '-top-3'
+  | '-right-3'
+  | '-bottom-3'
+  | '-left-3'
+  | '-inset-2'
+  | '-inset-x-2'
+  | '-inset-y-2'
+  | '-top-2'
+  | '-right-2'
+  | '-bottom-2'
+  | '-left-2'
 
 export type TZIndex =
   | 'z-0'
@@ -6918,9 +6922,6 @@ export type TWidth =
   | 'w-min'
   | 'w-max'
   | 'w-fit'
-  | 'w-chart'
-  | 'w-time'
-  | 'w-glass'
 
 export type TMinWidth =
   | 'min-w-0'
@@ -7098,7 +7099,6 @@ export type TFill =
   | 'fill-fuchsia'
   | 'fill-pink'
   | 'fill-rose'
-  | 'fill-gold'
 
 export type TStroke =
   | 'stroke-inherit'
@@ -7128,7 +7128,6 @@ export type TStroke =
   | 'stroke-fuchsia'
   | 'stroke-pink'
   | 'stroke-rose'
-  | 'stroke-gold'
 
 export type TStrokeWidth = 'stroke-0' | 'stroke-1' | 'stroke-2'
 
@@ -7143,6 +7142,7 @@ export type TScale =
   | 'scale-90'
   | 'scale-95'
   | 'scale-100'
+  | 'scale-102'
   | 'scale-105'
   | 'scale-110'
   | 'scale-125'
@@ -7153,6 +7153,7 @@ export type TScale =
   | 'scale-x-90'
   | 'scale-x-95'
   | 'scale-x-100'
+  | 'scale-x-102'
   | 'scale-x-105'
   | 'scale-x-110'
   | 'scale-x-125'
@@ -7163,6 +7164,7 @@ export type TScale =
   | 'scale-y-90'
   | 'scale-y-95'
   | 'scale-y-100'
+  | 'scale-y-102'
   | 'scale-y-105'
   | 'scale-y-110'
   | 'scale-y-125'
@@ -7640,8 +7642,6 @@ export type TPlaceholderColor =
   | 'placeholder-rose-700'
   | 'placeholder-rose-800'
   | 'placeholder-rose-900'
-  | 'placeholder-gold-dark'
-  | 'placeholder-gold-light'
 
 export type TPlaceholderOpacity =
   | 'placeholder-opacity-0'
@@ -7889,8 +7889,6 @@ export type TTextColor =
   | 'text-rose-700'
   | 'text-rose-800'
   | 'text-rose-900'
-  | 'text-gold-dark'
-  | 'text-gold-light'
 
 export type TTextOpacity =
   | 'text-opacity-0'
@@ -8177,8 +8175,6 @@ export type TTextDecorationColor =
   | 'decoration-rose-700'
   | 'decoration-rose-800'
   | 'decoration-rose-900'
-  | 'decoration-gold-dark'
-  | 'decoration-gold-light'
 
 export type TTextDecorationThickness =
   | 'decoration-0'
@@ -8469,6 +8465,11 @@ export const gridRowStart: TUtilityFunction<TGridRowStart> =
 export const gridRowEnd: TUtilityFunction<TGridRowEnd> = classnamesLib as any
 export const gap: TUtilityFunction<TGap> = classnamesLib as any
 
+//////////// Grouping Utility functions
+
+export const group: TUtilityFunction<TGroup> = classnamesLib as any
+export const peer: TUtilityFunction<TPeer> = classnamesLib as any
+
 //////////// Spacing Utility functions
 
 export const padding: TUtilityFunction<TPadding> = classnamesLib as any
@@ -8630,6 +8631,10 @@ export const flexBox: TUtilityFunction<TFlexBox> = classnamesLib as any
 
 export const grid: TUtilityFunction<TGrid> = classnamesLib as any
 
+//////////// Grouping Utility functions
+
+export const grouping: TUtilityFunction<TGrouping> = classnamesLib as any
+
 //////////// Spacing Utility functions
 
 export const spacing: TUtilityFunction<TSpacing> = classnamesLib as any
@@ -8749,6 +8754,8 @@ export const TW = {
   gridRowStart,
   gridRowEnd,
   gap,
+  group,
+  peer,
   padding,
   margin,
   space,
@@ -8839,6 +8846,7 @@ export const CN = {
   filters,
   flexBox,
   grid,
+  grouping,
   spacing,
   interactivity,
   layout,
