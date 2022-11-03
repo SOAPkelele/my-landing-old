@@ -16,7 +16,7 @@ import classnames, {
   padding,
   position,
   space,
-  transitionDuration,
+  transitionsAndAnimations,
   width,
 } from 'classnames/tailwind'
 import projects from 'data/projects'
@@ -42,15 +42,17 @@ const projectsContainer = classnames(
 
 const backgroundNeon = classnames(
   position('absolute'),
-  inset('inset-1'),
+  inset('inset-1', 'group-hover:-inset-x-3', 'group-hover:-inset-y-2'),
   backgroundImage('bg-gradient-to-r'),
   gradientColorStops('from-pink-600', 'via-red-500', 'to-orange-500'),
   borderRadius('rounded-lg'),
   opacity('opacity-75', 'group-hover:opacity-100'),
-  transitionDuration('duration-1000', 'group-hover:duration-1000'),
-  filters('group-hover:blur'),
-  inset('group-hover:-inset-x-3'),
-  inset('group-hover:-inset-y-2')
+  transitionsAndAnimations(
+    'duration-1000',
+    'group-hover:duration-1000',
+    'animate-tilt'
+  ),
+  filters('group-hover:blur')
 )
 
 export default function () {
