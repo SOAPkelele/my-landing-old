@@ -1,4 +1,3 @@
-import { LinkText } from 'components/Text'
 import Project from 'models/Project'
 
 const projects: Project[] = [
@@ -26,7 +25,9 @@ const projects: Project[] = [
     subtitle: 'This is this website!',
     url: 'https://antonbuev.com/',
     github: 'https://github.com/SOAPkelele/my-landing',
-    description: ['Any developer needs one!'],
+    description: [
+      "I think any developer needs one! I've made it to gather all info about my projects and myself. I'll try to keep updated with the latest info.",
+    ],
     technologies: ['TypeScript', 'TailwindCSS', 'React'],
   },
   {
