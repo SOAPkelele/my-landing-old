@@ -10,6 +10,7 @@ import classnames, {
   justifyContent,
   minHeight,
   opacity,
+  textColor,
   width,
 } from 'classnames/tailwind'
 
@@ -23,11 +24,11 @@ const homeContainer = classnames(
 )
 
 const iconContainer = classnames(
-  'hover:fill-yellow-100',
   fill('fill-white'),
   opacity('opacity-60', 'hover:opacity-100'),
   width('w-10'),
-  height('h-10')
+  height('h-10'),
+  textColor('hover:text-yellow-100')
 )
 
 const iconButtonsList = [

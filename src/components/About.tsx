@@ -10,6 +10,7 @@ import classnames, {
   flexDirection,
   flexWrap,
   gap,
+  group,
   height,
   inset,
   justifyContent,
@@ -30,7 +31,8 @@ const aboutSectionContainer = classnames(
   alignItems('items-center'),
   space('space-y-6'),
   position('relative'),
-  'group'
+  opacity('group:opacity-100'),
+  group('group')
 )
 
 const baseBackgroundCircle = classnames(
