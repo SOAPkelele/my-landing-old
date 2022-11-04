@@ -55,7 +55,7 @@ const aboutTextContainer = classnames(
   justifyContent('justify-between'),
   alignItems('items-center'),
   width('w-full'),
-  maxWidth('max-w-2xl'),
+  maxWidth('max-w-3xl'),
   gap('gap-3'),
   flexWrap('flex-wrap')
 )

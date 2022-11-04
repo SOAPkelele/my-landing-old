@@ -7,6 +7,7 @@ import {
   fontWeight,
   gradientColorStops,
   lineHeight,
+  textAlign,
   textColor,
 } from 'classnames/tailwind'
 import ChildrenProp from 'models/ChildrenProp'
@@ -29,7 +30,7 @@ export function SectionHeaderText({ children }: ChildrenProp) {
   return <h3 className={sectionHeaderText}>{children}</h3>
 }
 
-const aboutSectionText = classnames(baseText)
+const aboutSectionText = classnames(baseText, textAlign('text-justify'))
 export function AboutSectionText({ children }: ChildrenProp) {
   return <h3 className={aboutSectionText}>{children}</h3>
 }
@@ -91,7 +92,8 @@ export function ProjectSubtitle({ children }: ChildrenProp) {
 const projectDescription = classnames(
   whiteText,
   lineHeight('leading-tight'),
-  fontSize('text-sm', 'sm:text-base', 'md:text-xl')
+  fontSize('text-sm', 'sm:text-base', 'md:text-xl'),
+  textAlign('text-justify')
 )
 export function ProjectDescription({ children }: ChildrenProp) {
   return <p className={projectDescription}>{children}</p>
