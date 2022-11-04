@@ -10,12 +10,13 @@ import classnames, {
   flexGrow,
   gap,
   gradientColorStops,
+  group,
   inset,
   justifyContent,
+  maxWidth,
   opacity,
   padding,
   position,
-  space,
   transitionsAndAnimations,
   width,
 } from 'classnames/tailwind'
@@ -27,20 +28,22 @@ const projectsSectionContainer = classnames(
   flexDirection('flex-col'),
   justifyContent('justify-center'),
   alignItems('items-center'),
-  space('space-y-6')
+  gap('gap-4', 'sm:gap-6')
 )
 
 const projectsContainer = classnames(
   display('flex'),
   flexDirection('flex-col'),
-  flexGrow('grow'),
   justifyContent('justify-center'),
   alignItems('items-center'),
-  width('w-3/4'),
-  gap('gap-6')
+  width('w-full'),
+  maxWidth('max-w-4xl'),
+  position('relative'),
+  group('group')
 )
 
 const backgroundNeon = classnames(
+  // display('hidden', 'lg:block'), еще добавить чтобы не поднимался
   position('absolute'),
   inset('inset-1', 'group-hover:-inset-x-3', 'group-hover:-inset-y-2'),
   backgroundImage('bg-gradient-to-r'),
@@ -61,10 +64,8 @@ export default function () {
       <ProjectHeader />
       {projects.map((project) => (
         <div className={projectsContainer}>
-          <div class="relative group">
-            <div className={backgroundNeon}></div>
-            <Project project={project} />
-          </div>
+          <div className={backgroundNeon}></div>
+          <Project project={project} />
         </div>
       ))}
     </section>
