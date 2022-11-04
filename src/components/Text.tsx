@@ -12,8 +12,6 @@ import {
 import ChildrenProp from 'models/ChildrenProp'
 
 const whiteText = classnames(textColor('text-white'))
-// const grayText = classnames(textColor('text-gray-300'))
-// const yellowText = classnames(textColor('text-yellow-100'))
 
 const baseText = classnames(whiteText)
 export const homePageText = classnames(baseText, fontWeight('font-medium'))
@@ -23,14 +21,17 @@ export function LinkText({ children }: ChildrenProp) {
   return <p className={linkText}>{children}</p>
 }
 
-const sectionHeaderText = classnames(baseText, fontSize('text-3xl'))
+const sectionHeaderText = classnames(
+  baseText,
+  fontSize('text-xl', 'sm:text-3xl')
+)
 export function SectionHeaderText({ children }: ChildrenProp) {
-  return <p className={sectionHeaderText}>{children}</p>
+  return <h3 className={sectionHeaderText}>{children}</h3>
 }
 
 const aboutSectionText = classnames(baseText)
 export function AboutSectionText({ children }: ChildrenProp) {
-  return <p className={aboutSectionText}>{children}</p>
+  return <h3 className={aboutSectionText}>{children}</h3>
 }
 
 const hoverText = classnames(
@@ -47,31 +48,50 @@ const gradientText = classnames(
 
 const nameText = classnames(
   gradientText,
-  fontSize('text-8xl'),
+  fontSize('text-4xl', 'sm:text-6xl', 'md:text-8xl'),
   fontWeight('font-bold')
 )
 export function NameText({ children }: ChildrenProp) {
-  return <p className={nameText}>{children}</p>
+  return <h1 className={nameText}>{children}</h1>
+}
+
+const aboveNameText = classnames(
+  baseText,
+  fontSize('text-lg', 'sm:text-xl', 'md:text-3xl')
+)
+export function AboveNameText({ children }: ChildrenProp) {
+  return <h2 className={aboveNameText}>{children}</h2>
+}
+
+const belowNameText = classnames(
+  baseText,
+  fontSize('text-xl', 'sm:text-2xl', 'md:text-4xl')
+)
+export function BelowNameText({ children }: ChildrenProp) {
+  return <h2 className={belowNameText}>{children}</h2>
 }
 
 const projectTitle = classnames(
   gradientText,
-  fontSize('text-4xl'),
+  fontSize('text-xl', 'sm:text-4xl'),
   fontWeight('font-bold')
 )
 export function ProjectTitle({ children }: ChildrenProp) {
-  return <p className={projectTitle}>{children}</p>
+  return <h3 className={projectTitle}>{children}</h3>
 }
 
-const projectSubtitle = classnames(whiteText, fontSize('text-2xl'))
+const projectSubtitle = classnames(
+  whiteText,
+  fontSize('text-base', 'sm:text-xl', 'md:text-2xl')
+)
 export function ProjectSubtitle({ children }: ChildrenProp) {
-  return <p className={projectSubtitle}>{children}</p>
+  return <h4 className={projectSubtitle}>{children}</h4>
 }
 
 const projectDescription = classnames(
   whiteText,
   lineHeight('leading-tight'),
-  fontSize('text-lg')
+  fontSize('text-sm', 'sm:text-base', 'md:text-xl')
 )
 export function ProjectDescription({ children }: ChildrenProp) {
   return <p className={projectDescription}>{children}</p>
@@ -80,6 +100,7 @@ export function ProjectDescription({ children }: ChildrenProp) {
 const technologyName = classnames(
   hoverText,
   whiteText,
+  fontSize('text-base', 'sm:text-xl', 'md:text-2xl'),
   fontWeight('font-semibold')
 )
 export function TechnologyName({ children }: ChildrenProp) {
@@ -89,7 +110,7 @@ export function TechnologyName({ children }: ChildrenProp) {
 const navBarText = classnames(
   hoverText,
   whiteText,
-  fontSize('text-lg'),
+  fontSize('text-base', 'sm:text-lg'),
   fontWeight('font-medium')
 )
 export function NavBarText({ children }: ChildrenProp) {
@@ -104,7 +125,7 @@ export function SectionNameText({ children }: ChildrenProp) {
 const footerText = classnames(
   whiteText,
   fontWeight('font-semibold'),
-  fontSize('text-3xl')
+  fontSize('text-xl', 'sm:text-3xl')
 )
 export function FooterText({ children }: ChildrenProp) {
   return <p className={footerText}>{children}</p>

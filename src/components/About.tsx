@@ -14,6 +14,7 @@ import classnames, {
   height,
   inset,
   justifyContent,
+  maxWidth,
   mixBlendMode,
   opacity,
   padding,
@@ -24,7 +25,7 @@ import classnames, {
 } from 'classnames/tailwind'
 
 const aboutSectionContainer = classnames(
-  padding('py-20'),
+  padding('py-10'),
   display('flex'),
   flexDirection('flex-col'),
   justifyContent('justify-center'),
@@ -44,7 +45,8 @@ const baseBackgroundCircle = classnames(
   mixBlendMode('mix-blend-multiply'),
   opacity('opacity-80', 'group-hover:opacity-0'),
   transitionDuration('duration-500'),
-  animation('animate-blob')
+  animation('animate-blob'),
+  display('hidden', 'lg:block')
 )
 
 const aboutTextContainer = classnames(
@@ -52,7 +54,8 @@ const aboutTextContainer = classnames(
   flexDirection('flex-row'),
   justifyContent('justify-between'),
   alignItems('items-center'),
-  width('w-8/12'),
+  width('w-full'),
+  maxWidth('max-w-2xl'),
   gap('gap-3'),
   flexWrap('flex-wrap')
 )

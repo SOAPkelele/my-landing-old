@@ -16,6 +16,7 @@ import classnames, {
   fill,
   flexDirection,
   flexGrow,
+  flexWrap,
   gap,
   height,
   justifyContent,
@@ -29,16 +30,16 @@ import classnames, {
 } from 'classnames/tailwind'
 
 const projectContainer = classnames(
-  width('w-full'),
+  width('w-full'), // надо?
   position('relative'),
   backgroundColor('bg-black-background'),
   borderRadius('rounded-lg'),
-  padding('p-6'),
+  padding('p-4', 'md:p-6'),
   display('flex'),
   flexDirection('flex-col'),
   borderColor('border-gray-400'),
   alignItems('items-start'),
-  gap('gap-3'),
+  gap('gap-2', 'sm:gap-3'),
   transitionsAndAnimations('ease-in-out', 'duration-1000', 'transition'),
   scale('group-hover:scale-102'),
   borderWidth('border-1')
@@ -46,8 +47,12 @@ const projectContainer = classnames(
 
 const technologiesContainer = classnames(
   display('flex'),
+  flexDirection('flex-row'),
+  flexWrap('flex-wrap'),
   justifyContent('justify-evenly'),
-  width('w-full')
+  alignItems('items-center'),
+  width('w-full'),
+  gap('gap-2')
 )
 
 function TechnologiesSeparator() {

@@ -6,16 +6,18 @@ import classnames, {
   display,
   flexDirection,
   flexGrow,
+  maxWidth,
   space,
   width,
 } from 'classnames/tailwind'
 
-const aboutHeaderContainer = classnames(
+const headerContainer = classnames(
   display('flex'),
   flexDirection('flex-row'),
-  width('w-1/2'),
+  width('w-3/4', 'md:w-1/2'),
+  maxWidth('max-w-5xl'),
   space('space-x-2'),
-  alignItems('!items-baseline')
+  alignItems('items-baseline')
 )
 
 function LineSeparator() {
@@ -23,7 +25,7 @@ function LineSeparator() {
     <div
       className={classnames(
         flexGrow('grow'),
-        borderWidth('border-t-4'),
+        borderWidth('border-t-2', 'sm:border-t-4'),
         borderColor('border-gray-400')
       )}
     ></div>
@@ -32,7 +34,7 @@ function LineSeparator() {
 
 export const AboutHeader = () => {
   return (
-    <div className={aboutHeaderContainer}>
+    <div className={headerContainer}>
       <SectionHeaderText>About me</SectionHeaderText>
       <LineSeparator />
     </div>
@@ -41,7 +43,7 @@ export const AboutHeader = () => {
 
 export const ProjectHeader = () => {
   return (
-    <div className={aboutHeaderContainer}>
+    <div className={headerContainer}>
       <LineSeparator />
       <SectionHeaderText>Some things I've built</SectionHeaderText>
     </div>

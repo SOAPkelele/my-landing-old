@@ -21,7 +21,6 @@ import classnames, {
   opacity,
   padding,
   position,
-  space,
   transitionsAndAnimations,
   width,
   zIndex,
@@ -29,14 +28,13 @@ import classnames, {
 
 const headerContainer = classnames(
   margin('mx-auto'),
-  display('flex'),
   width('w-full'),
   maxWidth('max-w-6xl'),
   height('h-16'),
   justifyContent('justify-between'),
   alignItems('items-center'),
   position('fixed'),
-  padding('py-4'),
+  padding('py-4', 'px-20'),
   backgroundColor('bg-black-background'),
   zIndex('z-10')
 )
@@ -46,7 +44,7 @@ const navBarCointer = classnames(
   justifyContent('justify-end'),
   alignItems('items-center'),
   width('w-full'),
-  space('space-x-4')
+  gap('gap-3')
 )
 
 const navListContainer = classnames(
@@ -57,7 +55,7 @@ const navListContainer = classnames(
   gap('gap-3')
 )
 
-const resumeButtonWrapper = classnames(group('group'), position('relative')) // how
+const resumeButtonWrapper = classnames(group('group'), position('relative'))
 
 const blurBaground = classnames(
   position('absolute'),

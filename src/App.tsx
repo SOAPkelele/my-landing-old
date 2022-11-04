@@ -9,11 +9,9 @@ export default function () {
   return (
     <Root>
       <Navbar />
-      <main>
-        <Home />
-        <About />
-        <Projects />
-      </main>
+      <Home />
+      <About />
+      <Projects />
       <Footer />
     </Root>
   )

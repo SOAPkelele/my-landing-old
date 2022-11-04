@@ -1,10 +1,9 @@
-import { NameText, homePageText } from 'components/Text'
+import { AboveNameText, BelowNameText, NameText } from 'components/Text'
 import classnames, {
   alignItems,
   display,
   fill,
   flexDirection,
-  fontSize,
   gap,
   height,
   justifyContent,
@@ -20,14 +19,14 @@ const homeContainer = classnames(
   justifyContent('justify-center'),
   alignItems('items-center'),
   minHeight('min-h-screen'),
-  gap('gap-6')
+  gap('gap-3', 'sm:gap-6')
 )
 
 const iconContainer = classnames(
   fill('fill-white'),
   opacity('opacity-60', 'hover:opacity-100'),
-  width('w-10'),
-  height('h-10'),
+  width('w-5', 'sm:w-7', 'md:w-10'),
+  height('h-5', 'sm:h-7', 'md:h-10'),
   fill('fill-current'),
   textColor('text-white', 'hover:text-yellow-100')
 )
@@ -91,7 +90,7 @@ const iconButtonsList = [
 const iconsList = classnames(
   display('flex'),
   flexDirection('flex-col'),
-  gap('gap-6'),
+  gap('gap-3', 'md:gap-6'),
   justifyContent('justify-evenly'),
   alignItems('items-center')
 )
@@ -114,13 +113,9 @@ export default function () {
     <section className={homeContainer} id="home">
       <IconsList />
       <div>
-        <h2 className={classnames(homePageText, fontSize('text-3xl'))}>
-          Hi 👋, my name is
-        </h2>
+        <AboveNameText>Hi 👋, my name is</AboveNameText>
         <NameText> Anton Buev</NameText>
-        <h2 className={classnames(homePageText, fontSize('text-4xl'))}>
-          I'm a software developer
-        </h2>
+        <BelowNameText>I'm a software developer</BelowNameText>
       </div>
     </section>
   )
