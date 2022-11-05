@@ -33,6 +33,7 @@ const projects: Project[] = [
   {
     title: '@ltuniversity_bot',
     subtitle: 'Multilingual Telegram bot for crypto quizzes.',
+    github: 'https://github.com/SOAPkelele/nft_quiz_bot/',
     url: 'https://t.me/ltuniversity_bot',
     description: [
       'Beatiful Telegram bot for taking polls from LocalTrade University. It utilizes built-in telegram quizzes for a seamless experience. It is available in 4 languages and has a small admin panel where you can get stats. Adding new polls and questions is automated by parsing google spreadsheet.',
