@@ -7225,6 +7225,7 @@ export type TTranslate =
   | 'translate-x-2/4'
   | 'translate-x-3/4'
   | 'translate-x-full'
+  | 'translate-x-full-negative'
   | 'translate-y-0'
   | 'translate-y-1'
   | 'translate-y-2'
@@ -7267,6 +7268,7 @@ export type TTranslate =
   | 'translate-y-2/4'
   | 'translate-y-3/4'
   | 'translate-y-full'
+  | 'translate-y-full-negative'
 
 export type TSkew =
   | 'skew-x-0'

@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/!(tailwind).{ts,tsx}'],
   theme: {
     extend: {
+      translate: {
+        'full-negative': '-100%',
+      },
       colors: {
         black: {
           background: '#040404',
@@ -27,6 +30,7 @@ module.exports = {
         center: true,
         padding: '2rem',
       },
+
       animation: {
         shimmering: 'shimmer 5s ease infinite',
         blob: 'blob 4s infinite',

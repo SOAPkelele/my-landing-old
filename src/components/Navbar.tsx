@@ -9,6 +9,7 @@ import classnames, {
   borderRadius,
   borderWidth,
   display,
+  filters,
   flexDirection,
   gap,
   gradientColorStops,
@@ -21,25 +22,35 @@ import classnames, {
   opacity,
   padding,
   position,
+  transforms,
   transitionsAndAnimations,
   width,
   zIndex,
 } from 'classnames/tailwind'
+import useScrollDirection from 'hooks/useScrollDirection'
 
-const headerContainer = classnames(
-  margin('mx-auto'),
-  width('w-full'),
-  maxWidth('max-w-6xl'),
-  height('h-16'),
-  justifyContent('justify-between'),
-  alignItems('items-center'),
-  position('fixed'),
-  padding('py-4', 'px-20'),
-  backgroundColor('bg-black-background'),
-  zIndex('z-10')
-)
+const headerContainer = (visible: boolean) =>
+  classnames(
+    backgroundColor('bg-transparent'),
+    filters('backdrop-blur-md'),
+    transforms(
+      'transform-gpu',
+      !visible ? 'translate-y-full-negative' : 'translate-y-0'
+    ),
+    transitionsAndAnimations('transition-transform', 'duration-300'),
+    inset('left-0', 'top-0'),
+    margin('mx-auto'),
+    width('w-full'),
+    maxWidth('max-w-7xl'),
+    height('h-16'),
+    justifyContent('justify-end'),
+    alignItems('items-center'),
+    position('fixed'),
+    padding('py-4', 'px-5'),
+    zIndex('z-10')
+  )
 
-const navBarCointer = classnames(
+const navbarContainer = classnames(
   display('flex'),
   justifyContent('justify-end'),
   alignItems('items-center'),
@@ -111,9 +122,13 @@ const ResumeButton = () => {
 }
 
 export default function () {
+  const scrollDirection = useScrollDirection('up')
+
   return (
-    <header className={headerContainer}>
-      <nav className={navBarCointer}>
+    <header
+      className={headerContainer(scrollDirection === 'up' ? true : false)}
+    >
+      <nav className={navbarContainer}>
         <LinksList />
         <ResumeButton />
       </nav>
