@@ -26,7 +26,7 @@ export default function (initialDirection: string) {
     }
 
     const onScroll = () => {
-      console.log('added event listener')
+      // console.log('added event listener')
       if (!ticking) {
         window.requestAnimationFrame(updateScrollDir)
         ticking = true
@@ -36,7 +36,7 @@ export default function (initialDirection: string) {
     window.addEventListener('scroll', onScroll)
 
     return () => {
-      console.log('removed')
+      // console.log('removed')
       window.removeEventListener('scroll', onScroll)
     }
   }, [scrollDir])

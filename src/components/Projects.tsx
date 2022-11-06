@@ -7,7 +7,6 @@ import classnames, {
   display,
   filters,
   flexDirection,
-  flexGrow,
   gap,
   gradientColorStops,
   group,
@@ -43,11 +42,10 @@ const projectsContainer = classnames(
 )
 
 const backgroundNeon = classnames(
-  // display('hidden', 'lg:block'), еще добавить чтобы не поднимался
   position('absolute'),
   inset('inset-1', 'group-hover:-inset-x-3', 'group-hover:-inset-y-2'),
   backgroundImage('bg-gradient-to-r'),
-  gradientColorStops('from-pink-600', 'via-red-500', 'to-orange-500'),
+  gradientColorStops('from-rose-400', 'via-fuchsia-500', 'to-indigo-500'),
   borderRadius('rounded-lg'),
   opacity('opacity-75', 'group-hover:opacity-100'),
   transitionsAndAnimations(
