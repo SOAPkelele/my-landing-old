@@ -14,7 +14,7 @@ import ChildrenProp from 'models/ChildrenProp'
 
 const whiteText = classnames(textColor('text-white'))
 
-const baseText = classnames(whiteText)
+const baseText = classnames(whiteText, textAlign('text-left'))
 export const homePageText = classnames(baseText, fontWeight('font-medium'))
 
 const linkText = classnames(textColor('text-blue-300'))
@@ -30,7 +30,7 @@ export function SectionHeaderText({ children }: ChildrenProp) {
   return <h3 className={sectionHeaderText}>{children}</h3>
 }
 
-const aboutSectionText = classnames(baseText, textAlign('text-justify'))
+const aboutSectionText = classnames(baseText, textAlign('!text-justify'))
 export function AboutSectionText({ children }: ChildrenProp) {
   return <h3 className={aboutSectionText}>{children}</h3>
 }
@@ -82,7 +82,7 @@ export function ProjectTitle({ children }: ChildrenProp) {
 }
 
 const projectSubtitle = classnames(
-  whiteText,
+  baseText,
   fontSize('text-base', 'sm:text-xl', 'md:text-2xl')
 )
 export function ProjectSubtitle({ children }: ChildrenProp) {
@@ -90,7 +90,7 @@ export function ProjectSubtitle({ children }: ChildrenProp) {
 }
 
 const projectDescription = classnames(
-  whiteText,
+  baseText,
   lineHeight('leading-tight'),
   fontSize('text-sm', 'sm:text-base', 'md:text-xl'),
   textAlign('text-justify')
@@ -101,7 +101,7 @@ export function ProjectDescription({ children }: ChildrenProp) {
 
 const technologyName = classnames(
   hoverText,
-  whiteText,
+  baseText,
   fontSize('text-base', 'sm:text-xl', 'md:text-2xl'),
   fontWeight('font-semibold')
 )
@@ -111,7 +111,7 @@ export function TechnologyName({ children }: ChildrenProp) {
 
 const navBarText = classnames(
   hoverText,
-  whiteText,
+  baseText,
   fontSize('text-base', 'sm:text-lg'),
   fontWeight('font-medium')
 )
@@ -125,7 +125,7 @@ export function SectionNameText({ children }: ChildrenProp) {
 }
 
 const footerText = classnames(
-  whiteText,
+  baseText,
   fontWeight('font-semibold'),
   fontSize('text-xl', 'sm:text-3xl')
 )

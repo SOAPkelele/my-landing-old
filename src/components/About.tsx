@@ -93,7 +93,7 @@ export default function () {
           I've started programming at the university. It was a course in C where
           we had to learn how to manage memory, use pointers and all of that
           low-level stuff. Then there were some more courses in C++, Python, a
-          project using C#. It was a good start and then I I kept learning
+          project using C#. It was a good start and then I kept learning
           programming by myself and I never stopped.
         </AboutSectionText>
         <AboutSectionText>
