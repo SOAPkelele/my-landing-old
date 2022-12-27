@@ -86,26 +86,30 @@ export default function () {
       <AboutHeader />
       <div className={aboutTextContainer}>
         <AboutSectionText>
-          Hi! I'm Anton. I love coding, solving problems and making positive
-          impact.
+          Hi there! I'm Anton, a passionate programmer who is dedicated to
+          solving problems and making a positive impact through my work.
         </AboutSectionText>
         <AboutSectionText>
-          I've started programming at the university. It was a course in C where
-          we had to learn how to manage memory, use pointers and all of that
-          low-level stuff. Then there were some more courses in C++, Python, a
-          project using C#. It was a good start and then I kept learning
-          programming by myself and I never stopped.
+          I got my start in programming at university, where I took courses in
+          C, C++, Python, and C#. These courses laid the foundation for my
+          coding skills and sparked a lifelong love of programming. Since then,
+          I've been constantly learning and improving my skills, both through
+          self-study and through my work experiences.
         </AboutSectionText>
         <AboutSectionText>
-          Recently, I was mainly a backend developer but I've always felt
-          incomplete as I didn't know how to make a UI using web technologies as
-          it is was a great part of a modern app. And now I know! Being a
-          full-stack developer means I can bring a project from concept to
-          implementation.
+          In the past, I've primarily focused on backend development, but I
+          always felt that something was missing. I wanted to be able to create
+          user interfaces and bring my projects to life visually, so I decided
+          to expand my skillset to become a full-stack developer. Now, I have
+          the knowledge and experience to take a project from concept to
+          implementation, using a variety of technologies such as Python,
+          TypeScript, and SQL/NoSQL databases.
         </AboutSectionText>
         <AboutSectionText>
-          I've worked with different technologies and languages. In my work and
-          projects I mainly use Python, TypeScript, SQL\NoSQL databases.
+          I'm excited to continue growing as a developer and make an impact
+          through my work. If you're looking for someone who is dedicated,
+          skilled, and always learning, I'd love to work with you or join your
+          team.
         </AboutSectionText>
       </div>
     </section>

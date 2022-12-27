@@ -2,6 +2,22 @@ import Project from 'models/Project'
 
 const projects: Project[] = [
   {
+    title: 'Захвати',
+    subtitle: 'A delivery service using crowdshipping mechanics.',
+    url: 'https://parcel.buev.tech',
+    description: [
+      "While browsing through Telegram groups, I noticed that many people were seeking someone who could travel to their city from another location to bring them documents or other items. That's when I had the idea to create this service. My service connects individuals who need help delivering a parcel or documents from one location to another, no matter where they are located.",
+    ],
+    technologies: [
+      'TypeScript',
+      'Preact',
+      'TailwindCSS',
+      'Koa',
+      'MongoDB',
+      'grammY',
+    ],
+  },
+  {
     title: '@surfwaybookingbot',
     subtitle: 'Telegram bot for booking surf classes.',
     url: 'https://t.me/surfwaybookingbot',
@@ -28,7 +44,7 @@ const projects: Project[] = [
     description: [
       "I think any developer needs one! I've made it to gather all info about my projects and myself. I'll try to keep updated with the latest info.",
     ],
-    technologies: ['TypeScript', 'TailwindCSS', 'React'],
+    technologies: ['TypeScript', 'TailwindCSS', 'Preact'],
   },
   {
     title: '@ltuniversity_bot',

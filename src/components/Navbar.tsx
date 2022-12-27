@@ -113,7 +113,10 @@ const ResumeButton = () => {
     <div className={resumeButtonWrapper}>
       <div className={blurBaground}></div>
       <button className={resumeButton}>
-        <a href="/resume.pdf" target="_blank">
+        <a
+          href="https://drive.google.com/file/d/1pvlxKrP5rC8zgeVaWa3XY2gd7KM83YWq/view?usp=share_link"
+          target="_blank"
+        >
           <NavBarText>resume</NavBarText>
         </a>
       </button>
